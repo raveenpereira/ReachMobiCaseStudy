@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+   
+    <link runat="server" href="~/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src="https://use.fontawesome.com/a0e599827f.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Cover Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+  <link runat="server" href="~/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+
+    <!-- Custom styles for this template -->
+    <link runat="server" href="~/css/cover.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">WEATHERMAN</h3>
+
+            </div>
+          </div>
+            <br><br>
+          <div class="inner cover">
+            <h1 class="cover-heading" style="font-weight:200;">The Gods May Control The Weather.<br> You Control The Day.</h1>
+            <br><br>
+            <form class="form-horizontal " action="/User/New" method="post" id="oneform">
+              <div class="form-group ">
+
+                <div class="col-xs-8 col-sm-8 col-md-6 col-lg-6 col-centered ">
+                  <input type="text" class="form-control text-center" id="zip" placeholder="Zipcode" required name="zip" pattern="[0-9]{5}">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class=" col-sm-10 col-centered">
+                  <div class="checkbox">
+                    <label><input type="checkbox" id="terms" name="remember"  onchange="document.getElementById('signup').disabled = !this.checked;">I accept Terms & Conditions</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10 col-centered">
+                  <button type="submit" disabled class="btn btn-default" id="signup">SHOW ME HOW</button>
+                </div>
+              </div>
+            </form>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-default" style="border-color: transparent">Learn more</a>
+            </p>
+          </div>
+          <br><br>
+          <div class="mastfoot center-block" >
+            <div class="inner">
+              <div class="container">
+                <div class="row">
+                  <div class=" center-block text-center">
+
+
+
+                  </div>
+                  <div class="col-xs-12 center-block text-center" >
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="vendor/jquery/jquery.min.js"><\/script>')</script>
+    <script runat="server"src="~/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
